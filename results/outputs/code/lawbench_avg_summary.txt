@@ -1,0 +1,16 @@
+model,avg_score
+q3b_ft_hf,3.78
+q3b_ft_p_hf,2.48
+q3b_ft_p_q_hf,3.69
+q3b_p_ft_hf,3.17
+q3b_p_ft_q_hf,3.52
+q3b_q_ft_hf,3.52
+q3b_q_ft_p_hf,4.29
+q3b_q_p_hf,2.16
+q3bft_hf,2.5
+q3bft_q_hf,5.29
+q3bft_q_p_hf,4.02
+q3bo_hf,4.76
+q3bp_hf,3.06
+q3bp_q_hf,3.46
+q3bq_hf,2.3

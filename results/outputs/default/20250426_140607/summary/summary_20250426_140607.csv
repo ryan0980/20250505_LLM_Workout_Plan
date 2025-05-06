@@ -1,0 +1,3 @@
+dataset,version,metric,mode,q3bq_hf
+lukaemon_mmlu_international_law,cf3179,accuracy,gen,0.83
+lukaemon_mmlu_professional_law,5f7e6c,accuracy,gen,3.78

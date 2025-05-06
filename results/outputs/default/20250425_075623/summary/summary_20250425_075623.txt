@@ -1,0 +1,109 @@
+20250425_075623
+tabulate format
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+dataset                                     version    metric         mode      q3b_p_ft_q_hf
+------------------------------------------  ---------  -------------  ------  ---------------
+lukaemon_mmlu_abstract_algebra              2db373     accuracy       gen                2.00
+lukaemon_mmlu_anatomy                       72183b     accuracy       gen                2.96
+lukaemon_mmlu_astronomy                     d3ee01     accuracy       gen                6.58
+lukaemon_mmlu_college_biology               caec7d     accuracy       gen                4.86
+lukaemon_mmlu_college_chemistry             520aa6     accuracy       gen                2.00
+lukaemon_mmlu_college_computer_science      99c216     accuracy       gen                6.00
+lukaemon_mmlu_college_mathematics           678751     accuracy       gen                9.00
+lukaemon_mmlu_college_physics               4f382c     accuracy       gen                1.96
+lukaemon_mmlu_computer_security             ce7550     accuracy       gen                6.00
+lukaemon_mmlu_conceptual_physics            63588e     accuracy       gen                7.66
+lukaemon_mmlu_electrical_engineering        770ce3     accuracy       gen                8.28
+lukaemon_mmlu_elementary_mathematics        269926     accuracy       gen                7.41
+lukaemon_mmlu_high_school_biology           37b125     accuracy       gen                4.84
+lukaemon_mmlu_high_school_chemistry         ae8820     accuracy       gen                5.42
+lukaemon_mmlu_high_school_computer_science  9965a5     accuracy       gen                6.00
+lukaemon_mmlu_high_school_mathematics       ed4dc0     accuracy       gen                9.26
+lukaemon_mmlu_high_school_physics           93278f     accuracy       gen                3.97
+lukaemon_mmlu_high_school_statistics        8f3f3a     accuracy       gen                6.48
+lukaemon_mmlu_machine_learning              0283bb     accuracy       gen                3.57
+mmlu-stem                                   -          naive_average  gen                5.49
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+-------------------------------------------------------------------------------------------------------------------------------- THIS IS A DIVIDER --------------------------------------------------------------------------------------------------------------------------------
+
+csv format
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+dataset,version,metric,mode,q3b_p_ft_q_hf
+lukaemon_mmlu_abstract_algebra,2db373,accuracy,gen,2.00
+lukaemon_mmlu_anatomy,72183b,accuracy,gen,2.96
+lukaemon_mmlu_astronomy,d3ee01,accuracy,gen,6.58
+lukaemon_mmlu_college_biology,caec7d,accuracy,gen,4.86
+lukaemon_mmlu_college_chemistry,520aa6,accuracy,gen,2.00
+lukaemon_mmlu_college_computer_science,99c216,accuracy,gen,6.00
+lukaemon_mmlu_college_mathematics,678751,accuracy,gen,9.00
+lukaemon_mmlu_college_physics,4f382c,accuracy,gen,1.96
+lukaemon_mmlu_computer_security,ce7550,accuracy,gen,6.00
+lukaemon_mmlu_conceptual_physics,63588e,accuracy,gen,7.66
+lukaemon_mmlu_electrical_engineering,770ce3,accuracy,gen,8.28
+lukaemon_mmlu_elementary_mathematics,269926,accuracy,gen,7.41
+lukaemon_mmlu_high_school_biology,37b125,accuracy,gen,4.84
+lukaemon_mmlu_high_school_chemistry,ae8820,accuracy,gen,5.42
+lukaemon_mmlu_high_school_computer_science,9965a5,accuracy,gen,6.00
+lukaemon_mmlu_high_school_mathematics,ed4dc0,accuracy,gen,9.26
+lukaemon_mmlu_high_school_physics,93278f,accuracy,gen,3.97
+lukaemon_mmlu_high_school_statistics,8f3f3a,accuracy,gen,6.48
+lukaemon_mmlu_machine_learning,0283bb,accuracy,gen,3.57
+mmlu-stem,-,naive_average,gen,5.49
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+markdown format
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+| dataset | version | metric | mode | q3b_p_ft_q_hf |
+|----- | ----- | ----- | ----- | -----|
+| lukaemon_mmlu_abstract_algebra | 2db373 | accuracy | gen | 2.00 |
+| lukaemon_mmlu_anatomy | 72183b | accuracy | gen | 2.96 |
+| lukaemon_mmlu_astronomy | d3ee01 | accuracy | gen | 6.58 |
+| lukaemon_mmlu_college_biology | caec7d | accuracy | gen | 4.86 |
+| lukaemon_mmlu_college_chemistry | 520aa6 | accuracy | gen | 2.00 |
+| lukaemon_mmlu_college_computer_science | 99c216 | accuracy | gen | 6.00 |
+| lukaemon_mmlu_college_mathematics | 678751 | accuracy | gen | 9.00 |
+| lukaemon_mmlu_college_physics | 4f382c | accuracy | gen | 1.96 |
+| lukaemon_mmlu_computer_security | ce7550 | accuracy | gen | 6.00 |
+| lukaemon_mmlu_conceptual_physics | 63588e | accuracy | gen | 7.66 |
+| lukaemon_mmlu_electrical_engineering | 770ce3 | accuracy | gen | 8.28 |
+| lukaemon_mmlu_elementary_mathematics | 269926 | accuracy | gen | 7.41 |
+| lukaemon_mmlu_high_school_biology | 37b125 | accuracy | gen | 4.84 |
+| lukaemon_mmlu_high_school_chemistry | ae8820 | accuracy | gen | 5.42 |
+| lukaemon_mmlu_high_school_computer_science | 9965a5 | accuracy | gen | 6.00 |
+| lukaemon_mmlu_high_school_mathematics | ed4dc0 | accuracy | gen | 9.26 |
+| lukaemon_mmlu_high_school_physics | 93278f | accuracy | gen | 3.97 |
+| lukaemon_mmlu_high_school_statistics | 8f3f3a | accuracy | gen | 6.48 |
+| lukaemon_mmlu_machine_learning | 0283bb | accuracy | gen | 3.57 |
+| mmlu-stem | - | naive_average | gen | 5.49 |
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+-------------------------------------------------------------------------------------------------------------------------------- THIS IS A DIVIDER --------------------------------------------------------------------------------------------------------------------------------
+
+raw format
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-------------------------------
+Model: q3b_p_ft_q_hf
+lukaemon_mmlu_abstract_algebra: {'accuracy': 2.0}
+lukaemon_mmlu_anatomy: {'accuracy': 2.9629629629629632}
+lukaemon_mmlu_astronomy: {'accuracy': 6.578947368421052}
+lukaemon_mmlu_college_biology: {'accuracy': 4.861111111111112}
+lukaemon_mmlu_college_chemistry: {'accuracy': 2.0}
+lukaemon_mmlu_college_computer_science: {'accuracy': 6.0}
+lukaemon_mmlu_college_mathematics: {'accuracy': 9.0}
+lukaemon_mmlu_college_physics: {'accuracy': 1.9607843137254901}
+lukaemon_mmlu_computer_security: {'accuracy': 6.0}
+lukaemon_mmlu_conceptual_physics: {'accuracy': 7.659574468085106}
+lukaemon_mmlu_electrical_engineering: {'accuracy': 8.275862068965518}
+lukaemon_mmlu_elementary_mathematics: {'accuracy': 7.4074074074074066}
+lukaemon_mmlu_high_school_biology: {'accuracy': 4.838709677419355}
+lukaemon_mmlu_high_school_chemistry: {'accuracy': 5.41871921182266}
+lukaemon_mmlu_high_school_computer_science: {'accuracy': 6.0}
+lukaemon_mmlu_high_school_mathematics: {'accuracy': 9.25925925925926}
+lukaemon_mmlu_high_school_physics: {'accuracy': 3.9735099337748347}
+lukaemon_mmlu_high_school_statistics: {'accuracy': 6.481481481481481}
+lukaemon_mmlu_machine_learning: {'accuracy': 3.571428571428571}
+mmlu-stem: {'naive_average': 5.486829359782359}
+mmlu: {'error': "missing metrics: ['lukaemon_mmlu_formal_logic', 'lukaemon_mmlu_high_school_european_history', 'lukaemon_mmlu_high_school_us_history', 'lukaemon_mmlu_high_school_world_history', 'lukaemon_mmlu_international_law', 'lukaemon_mmlu_jurisprudence', 'lukaemon_mmlu_logical_fallacies', 'lukaemon_mmlu_moral_disputes', 'lukaemon_mmlu_moral_scenarios', 'lukaemon_mmlu_philosophy', 'lukaemon_mmlu_prehistory', 'lukaemon_mmlu_professional_law', 'lukaemon_mmlu_world_religions', 'lukaemon_mmlu_econometrics', 'lukaemon_mmlu_high_school_geography', 'lukaemon_mmlu_high_school_government_and_politics', 'lukaemon_mmlu_high_school_macroeconomics', 'lukaemon_mmlu_high_school_microeconomics', 'lukaemon_mmlu_high_school_psychology', 'lukaemon_mmlu_human_sexuality', 'lukaemon_mmlu_professional_psychology', 'lukaemon_mmlu_public_relations', 'lukaemon_mmlu_security_studies', 'lukaemon_mmlu_sociology', 'lukaemon_mmlu_us_foreign_policy', 'lukaemon_mmlu_business_ethics', 'lukaemon_mmlu_clinical_knowledge', 'lukaemon_mmlu_college_medicine', 'lukaemon_mmlu_global_facts', 'lukaemon_mmlu_human_aging', 'lukaemon_mmlu_management', 'lukaemon_mmlu_marketing', 'lukaemon_mmlu_medical_genetics', 'lukaemon_mmlu_miscellaneous', 'lukaemon_mmlu_nutrition', 'lukaemon_mmlu_professional_accounting', 'lukaemon_mmlu_professional_medicine', 'lukaemon_mmlu_virology']"}
+mmlu-weighted: {'error': "missing metrics: ['lukaemon_mmlu_formal_logic', 'lukaemon_mmlu_high_school_european_history', 'lukaemon_mmlu_high_school_us_history', 'lukaemon_mmlu_high_school_world_history', 'lukaemon_mmlu_international_law', 'lukaemon_mmlu_jurisprudence', 'lukaemon_mmlu_logical_fallacies', 'lukaemon_mmlu_moral_disputes', 'lukaemon_mmlu_moral_scenarios', 'lukaemon_mmlu_philosophy', 'lukaemon_mmlu_prehistory', 'lukaemon_mmlu_professional_law', 'lukaemon_mmlu_world_religions', 'lukaemon_mmlu_econometrics', 'lukaemon_mmlu_high_school_geography', 'lukaemon_mmlu_high_school_government_and_politics', 'lukaemon_mmlu_high_school_macroeconomics', 'lukaemon_mmlu_high_school_microeconomics', 'lukaemon_mmlu_high_school_psychology', 'lukaemon_mmlu_human_sexuality', 'lukaemon_mmlu_professional_psychology', 'lukaemon_mmlu_public_relations', 'lukaemon_mmlu_security_studies', 'lukaemon_mmlu_sociology', 'lukaemon_mmlu_us_foreign_policy', 'lukaemon_mmlu_business_ethics', 'lukaemon_mmlu_clinical_knowledge', 'lukaemon_mmlu_college_medicine', 'lukaemon_mmlu_global_facts', 'lukaemon_mmlu_human_aging', 'lukaemon_mmlu_management', 'lukaemon_mmlu_marketing', 'lukaemon_mmlu_medical_genetics', 'lukaemon_mmlu_miscellaneous', 'lukaemon_mmlu_nutrition', 'lukaemon_mmlu_professional_accounting', 'lukaemon_mmlu_professional_medicine', 'lukaemon_mmlu_virology']"}
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
