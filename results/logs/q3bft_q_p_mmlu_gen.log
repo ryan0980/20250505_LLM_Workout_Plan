@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/root/autodl-tmp/opencompass/opencompass/run.py", line 1, in <module>
+    from opencompass.cli.main import main
+  File "/root/autodl-tmp/opencompass/opencompass/opencompass/cli/main.py", line 10, in <module>
+    from mmengine.config import Config, DictAction
+ModuleNotFoundError: No module named 'mmengine'
