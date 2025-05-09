@@ -21,6 +21,7 @@
 | Pruning → Quantization → Fine-tuning                | Not Applicable |      |          |                     |                 |                     |            |
 
 ![result for operation sequence](/results/figs/op_sq.png)
+![result for model size](/results/figs/md_size.png)
 
 ---
 ## Comparison on different method
