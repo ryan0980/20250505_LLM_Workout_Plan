@@ -1,0 +1,246 @@
+====================
+任务开始时间：Thu Feb 27 05:17:10 CST 2025
+日志文件：/root/autodl-tmp/gpu_load/20250227051710_benchmark.log
+GPU监控数据文件：/root/autodl-tmp/gpu_load/20250227051710_gpu_usage.csv
+当前所有 GPU 信息：
+GPU 0: NVIDIA GeForce RTX 4090 (UUID: GPU-d2221899-6c56-046f-1b8d-78f5c2bf57c8)
+GPU 1: NVIDIA GeForce RTX 4090 (UUID: GPU-70e4b126-281e-a72f-0898-6d6d9e02e08f)
+--------------------
+可用 GPU 数量：2
+====================
+Starting GPU monitoring, output file: /root/autodl-tmp/gpu_load/20250227051710_gpu_usage.csv
+Starting benchmark...
+02/27 05:17:15 - OpenCompass - WARNING - Found ambiguous patterns, using the first matched config.
++----------------------+----------------------------------------------------------------------------------------------------+
+| Ambiguous patterns   | Matched files                                                                                      |
+|----------------------+----------------------------------------------------------------------------------------------------|
+| lawbench2_test       | configs/datasets/lawbench/lawbench2_test.py                                                        |
+|                      | /root/autodl-tmp/opencompass/opencompass/opencompass/configs/./datasets/lawbench/lawbench2_test.py |
++----------------------+----------------------------------------------------------------------------------------------------+
+02/27 05:17:15 - OpenCompass - INFO - Loading lawbench2_test: configs/datasets/lawbench/lawbench2_test.py
+02/27 05:17:15 - OpenCompass - WARNING - Found ambiguous patterns, using the first matched config.
++----------------------+---------------------------------------------------------------------------------------+
+| Ambiguous patterns   | Matched files                                                                         |
+|----------------------+---------------------------------------------------------------------------------------|
+| example              | configs/summarizers/example.py                                                        |
+|                      | /root/autodl-tmp/opencompass/opencompass/opencompass/configs/./summarizers/example.py |
++----------------------+---------------------------------------------------------------------------------------+
+02/27 05:17:15 - OpenCompass - INFO - Loading example: configs/summarizers/example.py
+02/27 05:17:15 - OpenCompass - INFO - Current exp folder: outputs/default/20250227_051715
+02/27 05:17:15 - OpenCompass - WARNING - SlurmRunner is not used, so the partition argument is ignored.
+02/27 05:17:15 - OpenCompass - INFO - Partitioned into 1 tasks.
+02/27 05:17:16 - OpenCompass - WARNING - Only use 1 GPUs for total 2 available GPUs in debug mode.
+02/27 05:17:16 - OpenCompass - INFO - Task [7b_q_hf/lawbench2-1-1-article_recitation-test,7b_q_hf/lawbench2-1-2-knowledge_question_answering-test,7b_q_hf/lawbench2-2-1-document_proofreading-test,7b_q_hf/lawbench2-2-2-dispute_focus_identification-test,7b_q_hf/lawbench2-2-3-marital_disputes_identification-test,7b_q_hf/lawbench2-2-4-issue_topic_identification-test,7b_q_hf/lawbench2-2-5-reading_comprehension-test,7b_q_hf/lawbench2-2-6-named_entity_recognition-test,7b_q_hf/lawbench2-2-7-opinion_summarization-test,7b_q_hf/lawbench2-2-8-argument_mining-test,7b_q_hf/lawbench2-2-9-event_detection-test,7b_q_hf/lawbench2-2-10-trigger_word_extraction-test,7b_q_hf/lawbench2-3-1-fact_based_article_prediction-test,7b_q_hf/lawbench2-3-2-scene_based_article_prediction-test,7b_q_hf/lawbench2-3-3-charge_prediction-test,7b_q_hf/lawbench2-3-4-prison_term_prediction_wo_article-test,7b_q_hf/lawbench2-3-5-prison_term_prediction_w_article-test,7b_q_hf/lawbench2-3-6-case_analysis-test,7b_q_hf/lawbench2-3-7-criminal_damages_calculation-test,7b_q_hf/lawbench2-3-8-consultation-test]
+02/27 05:17:16 - OpenCompass - WARNING - pad_token_id is not set for the tokenizer.
+02/27 05:17:16 - OpenCompass - WARNING - Using 0 as pad_token_id.
+02/27 05:17:18 - OpenCompass - INFO - Start inferencing [7b_q_hf/lawbench2-1-1-article_recitation-test]
+[2025-02-27 05:17:18,687] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [INFO] Starting build dataloader
+[2025-02-27 05:17:18,687] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [INFO] Starting inference process...
+  0%|          | 0/13 [00:00<?, ?it/s]/root/miniconda3/envs/opencompass/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:628: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.6` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/root/miniconda3/envs/opencompass/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+  8%|▊         | 1/13 [00:52<10:25, 52.14s/it] 15%|█▌        | 2/13 [01:41<09:16, 50.58s/it] 23%|██▎       | 3/13 [02:30<08:19, 49.98s/it] 31%|███       | 4/13 [03:20<07:27, 49.73s/it] 38%|███▊      | 5/13 [04:09<06:37, 49.68s/it] 46%|████▌     | 6/13 [04:59<05:47, 49.61s/it] 54%|█████▍    | 7/13 [05:49<04:58, 49.69s/it] 62%|██████▏   | 8/13 [06:38<04:07, 49.60s/it] 69%|██████▉   | 9/13 [07:27<03:17, 49.43s/it] 77%|███████▋  | 10/13 [08:16<02:27, 49.33s/it] 85%|████████▍ | 11/13 [09:05<01:38, 49.24s/it] 92%|█████████▏| 12/13 [09:55<00:49, 49.29s/it]100%|██████████| 13/13 [10:44<00:00, 49.27s/it]100%|██████████| 13/13 [10:44<00:00, 49.57s/it]
+02/27 05:28:03 - OpenCompass - INFO - Start inferencing [7b_q_hf/lawbench2-1-2-knowledge_question_answering-test]
+[2025-02-27 05:28:03,106] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [INFO] Starting build dataloader
+[2025-02-27 05:28:03,106] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [INFO] Starting inference process...
+  0%|          | 0/13 [00:00<?, ?it/s]  8%|▊         | 1/13 [00:52<10:29, 52.49s/it]/root/miniconda3/envs/opencompass/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:628: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.6` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/root/miniconda3/envs/opencompass/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+ 15%|█▌        | 2/13 [01:42<09:19, 50.85s/it] 23%|██▎       | 3/13 [02:31<08:21, 50.15s/it] 31%|███       | 4/13 [03:21<07:29, 49.95s/it] 38%|███▊      | 5/13 [04:10<06:37, 49.68s/it] 46%|████▌     | 6/13 [05:00<05:48, 49.75s/it] 54%|█████▍    | 7/13 [05:49<04:58, 49.67s/it] 62%|██████▏   | 8/13 [06:39<04:08, 49.67s/it] 69%|██████▉   | 9/13 [07:29<03:19, 49.80s/it] 77%|███████▋  | 10/13 [08:19<02:29, 49.97s/it] 85%|████████▍ | 11/13 [09:09<01:39, 49.92s/it] 92%|█████████▏| 12/13 [09:59<00:49, 49.77s/it]100%|██████████| 13/13 [10:48<00:00, 49.71s/it]100%|██████████| 13/13 [10:48<00:00, 49.90s/it]
+02/27 05:38:51 - OpenCompass - INFO - Start inferencing [7b_q_hf/lawbench2-2-1-document_proofreading-test]
+[2025-02-27 05:38:51,809] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [INFO] Starting build dataloader
+[2025-02-27 05:38:51,810] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [INFO] Starting inference process...
+  0%|          | 0/13 [00:00<?, ?it/s]  8%|▊         | 1/13 [00:49<09:59, 49.95s/it] 15%|█▌        | 2/13 [01:39<09:06, 49.65s/it] 23%|██▎       | 3/13 [02:29<08:18, 49.82s/it] 31%|███       | 4/13 [03:18<07:26, 49.56s/it] 38%|███▊      | 5/13 [04:07<06:35, 49.45s/it] 46%|████▌     | 6/13 [04:57<05:47, 49.62s/it] 54%|█████▍    | 7/13 [05:47<04:57, 49.61s/it] 62%|██████▏   | 8/13 [06:36<04:07, 49.57s/it] 69%|██████▉   | 9/13 [07:26<03:17, 49.49s/it] 77%|███████▋  | 10/13 [08:15<02:28, 49.36s/it] 85%|████████▍ | 11/13 [09:04<01:38, 49.40s/it] 92%|█████████▏| 12/13 [09:54<00:49, 49.39s/it]100%|██████████| 13/13 [10:43<00:00, 49.43s/it]100%|██████████| 13/13 [10:43<00:00, 49.51s/it]
+02/27 05:49:35 - OpenCompass - INFO - Start inferencing [7b_q_hf/lawbench2-2-2-dispute_focus_identification-test]
+[2025-02-27 05:49:35,441] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [INFO] Starting build dataloader
+[2025-02-27 05:49:35,441] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [INFO] Starting inference process...
+  0%|          | 0/13 [00:00<?, ?it/s]  8%|▊         | 1/13 [00:51<10:23, 51.92s/it] 15%|█▌        | 2/13 [01:43<09:31, 51.95s/it] 23%|██▎       | 3/13 [02:48<09:36, 57.61s/it] 31%|███       | 4/13 [03:40<08:19, 55.46s/it] 38%|███▊      | 5/13 [04:31<07:11, 53.89s/it] 46%|████▌     | 6/13 [05:22<06:10, 52.92s/it] 54%|█████▍    | 7/13 [06:17<05:21, 53.64s/it] 62%|██████▏   | 8/13 [07:13<04:31, 54.21s/it] 69%|██████▉   | 9/13 [08:20<03:53, 58.30s/it] 77%|███████▋  | 10/13 [09:11<02:48, 56.02s/it] 85%|████████▍ | 11/13 [10:04<01:50, 55.29s/it]This is a friendly reminder - the current text generation call will exceed the model's predefined maximum length (4096). Depending on the model, you may observe exceptions, performance degradation, or nothing at all.
+ 92%|█████████▏| 12/13 [11:33<01:05, 65.34s/it]100%|██████████| 13/13 [12:22<00:00, 60.56s/it]100%|██████████| 13/13 [12:22<00:00, 57.14s/it]
+02/27 06:01:58 - OpenCompass - INFO - Start inferencing [7b_q_hf/lawbench2-2-3-marital_disputes_identification-test]
+[2025-02-27 06:01:58,288] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [INFO] Starting build dataloader
+[2025-02-27 06:01:58,288] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [INFO] Starting inference process...
+  0%|          | 0/13 [00:00<?, ?it/s]  8%|▊         | 1/13 [00:49<09:51, 49.26s/it] 15%|█▌        | 2/13 [01:38<09:04, 49.53s/it] 23%|██▎       | 3/13 [02:28<08:16, 49.66s/it] 31%|███       | 4/13 [03:18<07:27, 49.76s/it] 38%|███▊      | 5/13 [04:08<06:39, 49.92s/it] 46%|████▌     | 6/13 [04:58<05:48, 49.84s/it] 54%|█████▍    | 7/13 [05:48<04:59, 49.85s/it] 62%|██████▏   | 8/13 [06:38<04:09, 49.84s/it] 69%|██████▉   | 9/13 [07:27<03:18, 49.73s/it] 77%|███████▋  | 10/13 [08:17<02:28, 49.61s/it] 85%|████████▍ | 11/13 [09:07<01:39, 49.71s/it] 92%|█████████▏| 12/13 [09:57<00:49, 49.79s/it]100%|██████████| 13/13 [10:46<00:00, 49.71s/it]100%|██████████| 13/13 [10:46<00:00, 49.73s/it]
+02/27 06:12:44 - OpenCompass - INFO - Start inferencing [7b_q_hf/lawbench2-2-4-issue_topic_identification-test]
+[2025-02-27 06:12:44,847] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [INFO] Starting build dataloader
+[2025-02-27 06:12:44,847] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [INFO] Starting inference process...
+  0%|          | 0/13 [00:00<?, ?it/s]  8%|▊         | 1/13 [00:49<09:52, 49.39s/it] 15%|█▌        | 2/13 [01:39<09:04, 49.54s/it] 23%|██▎       | 3/13 [02:28<08:14, 49.46s/it] 31%|███       | 4/13 [03:18<07:26, 49.64s/it] 38%|███▊      | 5/13 [04:07<06:37, 49.63s/it] 46%|████▌     | 6/13 [04:57<05:46, 49.56s/it] 54%|█████▍    | 7/13 [05:46<04:56, 49.48s/it] 62%|██████▏   | 8/13 [06:36<04:07, 49.59s/it] 69%|██████▉   | 9/13 [07:26<03:18, 49.61s/it] 77%|███████▋  | 10/13 [08:15<02:28, 49.55s/it] 85%|████████▍ | 11/13 [09:05<01:39, 49.53s/it] 92%|█████████▏| 12/13 [09:54<00:49, 49.36s/it]100%|██████████| 13/13 [10:43<00:00, 49.43s/it]100%|██████████| 13/13 [10:43<00:00, 49.51s/it]
+02/27 06:23:28 - OpenCompass - INFO - Start inferencing [7b_q_hf/lawbench2-2-5-reading_comprehension-test]
+[2025-02-27 06:23:28,518] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [INFO] Starting build dataloader
+[2025-02-27 06:23:28,518] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [INFO] Starting inference process...
+  0%|          | 0/13 [00:00<?, ?it/s]  8%|▊         | 1/13 [00:51<10:22, 51.86s/it] 15%|█▌        | 2/13 [01:42<09:24, 51.31s/it] 23%|██▎       | 3/13 [02:32<08:27, 50.79s/it] 31%|███       | 4/13 [03:22<07:34, 50.48s/it] 38%|███▊      | 5/13 [04:16<06:51, 51.50s/it] 46%|████▌     | 6/13 [05:08<06:01, 51.70s/it] 54%|█████▍    | 7/13 [05:59<05:08, 51.41s/it] 62%|██████▏   | 8/13 [06:49<04:15, 51.12s/it] 69%|██████▉   | 9/13 [07:40<03:23, 50.98s/it] 77%|███████▋  | 10/13 [08:32<02:33, 51.30s/it] 85%|████████▍ | 11/13 [09:23<01:42, 51.29s/it] 92%|█████████▏| 12/13 [10:14<00:51, 51.24s/it]100%|██████████| 13/13 [11:04<00:00, 50.81s/it]100%|██████████| 13/13 [11:04<00:00, 51.12s/it]
+02/27 06:34:33 - OpenCompass - INFO - Start inferencing [7b_q_hf/lawbench2-2-6-named_entity_recognition-test]
+[2025-02-27 06:34:33,154] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [INFO] Starting build dataloader
+[2025-02-27 06:34:33,155] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [INFO] Starting inference process...
+  0%|          | 0/13 [00:00<?, ?it/s]  8%|▊         | 1/13 [00:49<09:49, 49.10s/it] 15%|█▌        | 2/13 [01:38<09:03, 49.41s/it] 23%|██▎       | 3/13 [02:28<08:13, 49.37s/it] 31%|███       | 4/13 [03:17<07:24, 49.39s/it] 38%|███▊      | 5/13 [04:06<06:34, 49.35s/it] 46%|████▌     | 6/13 [04:55<05:45, 49.29s/it] 54%|█████▍    | 7/13 [05:45<04:55, 49.24s/it] 62%|██████▏   | 8/13 [06:34<04:06, 49.23s/it] 69%|██████▉   | 9/13 [07:23<03:16, 49.11s/it] 77%|███████▋  | 10/13 [08:11<02:26, 48.98s/it] 85%|████████▍ | 11/13 [09:00<01:37, 48.97s/it] 92%|█████████▏| 12/13 [09:50<00:49, 49.08s/it]100%|██████████| 13/13 [10:39<00:00, 49.11s/it]100%|██████████| 13/13 [10:39<00:00, 49.17s/it]
+02/27 06:45:12 - OpenCompass - INFO - Start inferencing [7b_q_hf/lawbench2-2-7-opinion_summarization-test]
+[2025-02-27 06:45:12,448] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [INFO] Starting build dataloader
+[2025-02-27 06:45:12,448] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [INFO] Starting inference process...
+  0%|          | 0/13 [00:00<?, ?it/s]  8%|▊         | 1/13 [00:49<09:54, 49.57s/it] 15%|█▌        | 2/13 [01:39<09:05, 49.63s/it] 23%|██▎       | 3/13 [02:28<08:16, 49.67s/it] 31%|███       | 4/13 [03:18<07:25, 49.53s/it] 38%|███▊      | 5/13 [04:07<06:34, 49.33s/it] 46%|████▌     | 6/13 [04:56<05:44, 49.24s/it] 54%|█████▍    | 7/13 [05:45<04:55, 49.29s/it] 62%|██████▏   | 8/13 [06:35<04:07, 49.46s/it] 69%|██████▉   | 9/13 [07:25<03:17, 49.49s/it] 77%|███████▋  | 10/13 [08:15<02:29, 49.74s/it] 85%|████████▍ | 11/13 [09:04<01:39, 49.70s/it] 92%|█████████▏| 12/13 [09:54<00:49, 49.73s/it]100%|██████████| 13/13 [10:44<00:00, 49.66s/it]100%|██████████| 13/13 [10:44<00:00, 49.56s/it]
+02/27 06:55:56 - OpenCompass - INFO - Start inferencing [7b_q_hf/lawbench2-2-8-argument_mining-test]
+[2025-02-27 06:55:56,758] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [INFO] Starting build dataloader
+[2025-02-27 06:55:56,758] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [INFO] Starting inference process...
+  0%|          | 0/13 [00:00<?, ?it/s]  8%|▊         | 1/13 [00:50<10:00, 50.07s/it] 15%|█▌        | 2/13 [01:40<09:10, 50.02s/it] 23%|██▎       | 3/13 [02:30<08:21, 50.13s/it] 31%|███       | 4/13 [03:20<07:31, 50.18s/it] 38%|███▊      | 5/13 [04:10<06:41, 50.15s/it] 46%|████▌     | 6/13 [05:00<05:51, 50.16s/it] 54%|█████▍    | 7/13 [05:50<05:00, 50.11s/it] 62%|██████▏   | 8/13 [06:40<04:10, 50.12s/it] 69%|██████▉   | 9/13 [07:31<03:20, 50.13s/it] 77%|███████▋  | 10/13 [08:21<02:30, 50.26s/it] 85%|████████▍ | 11/13 [09:11<01:40, 50.26s/it] 92%|█████████▏| 12/13 [10:01<00:50, 50.17s/it]100%|██████████| 13/13 [10:51<00:00, 49.97s/it]100%|██████████| 13/13 [10:51<00:00, 50.11s/it]
+02/27 07:06:48 - OpenCompass - INFO - Start inferencing [7b_q_hf/lawbench2-2-9-event_detection-test]
+[2025-02-27 07:06:48,225] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [INFO] Starting build dataloader
+[2025-02-27 07:06:48,225] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [INFO] Starting inference process...
+  0%|          | 0/13 [00:00<?, ?it/s]  8%|▊         | 1/13 [00:49<09:52, 49.38s/it] 15%|█▌        | 2/13 [01:38<09:03, 49.41s/it] 23%|██▎       | 3/13 [02:28<08:13, 49.37s/it] 31%|███       | 4/13 [03:17<07:23, 49.26s/it] 38%|███▊      | 5/13 [04:06<06:34, 49.35s/it] 46%|████▌     | 6/13 [04:56<05:46, 49.49s/it] 54%|█████▍    | 7/13 [05:45<04:55, 49.32s/it] 62%|██████▏   | 8/13 [06:34<04:06, 49.35s/it] 69%|██████▉   | 9/13 [07:24<03:17, 49.29s/it] 77%|███████▋  | 10/13 [08:13<02:27, 49.33s/it] 85%|████████▍ | 11/13 [09:02<01:38, 49.37s/it] 92%|█████████▏| 12/13 [09:52<00:49, 49.33s/it]100%|██████████| 13/13 [10:41<00:00, 49.31s/it]100%|██████████| 13/13 [10:41<00:00, 49.34s/it]
+02/27 07:17:29 - OpenCompass - INFO - Start inferencing [7b_q_hf/lawbench2-2-10-trigger_word_extraction-test]
+[2025-02-27 07:17:29,652] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [INFO] Starting build dataloader
+[2025-02-27 07:17:29,652] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [INFO] Starting inference process...
+  0%|          | 0/13 [00:00<?, ?it/s]  8%|▊         | 1/13 [00:48<09:47, 48.93s/it] 15%|█▌        | 2/13 [01:38<09:01, 49.23s/it] 23%|██▎       | 3/13 [02:27<08:09, 49.00s/it] 31%|███       | 4/13 [03:16<07:21, 49.07s/it] 38%|███▊      | 5/13 [04:05<06:32, 49.09s/it] 46%|████▌     | 6/13 [04:54<05:43, 49.06s/it] 54%|█████▍    | 7/13 [05:43<04:54, 49.10s/it] 62%|██████▏   | 8/13 [06:32<04:05, 49.10s/it] 69%|██████▉   | 9/13 [07:21<03:15, 48.93s/it] 77%|███████▋  | 10/13 [08:10<02:27, 49.03s/it] 85%|████████▍ | 11/13 [09:00<01:38, 49.18s/it] 92%|█████████▏| 12/13 [09:48<00:49, 49.08s/it]100%|██████████| 13/13 [10:38<00:00, 49.31s/it]100%|██████████| 13/13 [10:38<00:00, 49.13s/it]
+02/27 07:28:08 - OpenCompass - INFO - Start inferencing [7b_q_hf/lawbench2-3-1-fact_based_article_prediction-test]
+[2025-02-27 07:28:08,392] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [INFO] Starting build dataloader
+[2025-02-27 07:28:08,392] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [INFO] Starting inference process...
+  0%|          | 0/13 [00:00<?, ?it/s]  8%|▊         | 1/13 [01:26<17:17, 86.49s/it] 15%|█▌        | 2/13 [02:54<16:00, 87.32s/it] 23%|██▎       | 3/13 [03:55<12:31, 75.16s/it] 31%|███       | 4/13 [05:23<12:01, 80.20s/it] 38%|███▊      | 5/13 [06:16<09:25, 70.71s/it] 46%|████▌     | 6/13 [07:25<08:11, 70.17s/it] 54%|█████▍    | 7/13 [08:21<06:32, 65.40s/it] 62%|██████▏   | 8/13 [09:14<05:06, 61.27s/it] 69%|██████▉   | 9/13 [10:04<03:51, 57.87s/it] 77%|███████▋  | 10/13 [11:00<02:52, 57.37s/it] 85%|████████▍ | 11/13 [11:51<01:50, 55.25s/it] 92%|█████████▏| 12/13 [12:41<00:53, 53.79s/it]100%|██████████| 13/13 [13:30<00:00, 52.44s/it]100%|██████████| 13/13 [13:30<00:00, 62.38s/it]
+02/27 07:41:39 - OpenCompass - INFO - Start inferencing [7b_q_hf/lawbench2-3-2-scene_based_article_prediction-test]
+[2025-02-27 07:41:39,328] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [INFO] Starting build dataloader
+[2025-02-27 07:41:39,328] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [INFO] Starting inference process...
+  0%|          | 0/13 [00:00<?, ?it/s]  8%|▊         | 1/13 [00:49<09:51, 49.27s/it] 15%|█▌        | 2/13 [01:38<08:58, 48.98s/it] 23%|██▎       | 3/13 [02:26<08:08, 48.84s/it] 31%|███       | 4/13 [03:15<07:20, 48.95s/it] 38%|███▊      | 5/13 [04:04<06:31, 48.99s/it] 46%|████▌     | 6/13 [04:53<05:42, 48.91s/it] 54%|█████▍    | 7/13 [05:42<04:52, 48.82s/it] 62%|██████▏   | 8/13 [06:30<04:03, 48.77s/it] 69%|██████▉   | 9/13 [07:19<03:15, 48.79s/it] 77%|███████▋  | 10/13 [08:08<02:26, 48.91s/it] 85%|████████▍ | 11/13 [08:58<01:37, 48.98s/it] 92%|█████████▏| 12/13 [09:47<00:49, 49.01s/it]100%|██████████| 13/13 [10:36<00:00, 48.99s/it]100%|██████████| 13/13 [10:36<00:00, 48.93s/it]
+02/27 07:52:15 - OpenCompass - INFO - Start inferencing [7b_q_hf/lawbench2-3-3-charge_prediction-test]
+[2025-02-27 07:52:15,467] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [INFO] Starting build dataloader
+[2025-02-27 07:52:15,467] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [INFO] Starting inference process...
+  0%|          | 0/13 [00:00<?, ?it/s]  8%|▊         | 1/13 [00:49<09:51, 49.28s/it] 15%|█▌        | 2/13 [01:48<10:09, 55.42s/it] 23%|██▎       | 3/13 [02:47<09:28, 56.86s/it] 31%|███       | 4/13 [03:37<08:07, 54.16s/it] 38%|███▊      | 5/13 [04:29<07:05, 53.21s/it] 46%|████▌     | 6/13 [05:19<06:05, 52.26s/it] 54%|█████▍    | 7/13 [06:09<05:09, 51.56s/it] 62%|██████▏   | 8/13 [07:13<04:36, 55.32s/it] 69%|██████▉   | 9/13 [08:10<03:44, 56.02s/it] 77%|███████▋  | 10/13 [09:02<02:44, 54.77s/it] 85%|████████▍ | 11/13 [09:53<01:47, 53.56s/it] 92%|█████████▏| 12/13 [10:43<00:52, 52.54s/it]100%|██████████| 13/13 [11:32<00:00, 51.57s/it]100%|██████████| 13/13 [11:32<00:00, 53.30s/it]
+02/27 08:03:48 - OpenCompass - INFO - Start inferencing [7b_q_hf/lawbench2-3-4-prison_term_prediction_wo_article-test]
+[2025-02-27 08:03:48,388] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [INFO] Starting build dataloader
+[2025-02-27 08:03:48,388] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [INFO] Starting inference process...
+  0%|          | 0/13 [00:00<?, ?it/s]  8%|▊         | 1/13 [01:21<16:21, 81.81s/it] 15%|█▌        | 2/13 [02:11<11:29, 62.70s/it] 23%|██▎       | 3/13 [03:06<09:55, 59.50s/it] 31%|███       | 4/13 [03:56<08:20, 55.58s/it] 38%|███▊      | 5/13 [04:46<07:08, 53.52s/it] 46%|████▌     | 6/13 [05:43<06:22, 54.68s/it] 54%|█████▍    | 7/13 [07:11<06:33, 65.55s/it] 62%|██████▏   | 8/13 [08:01<05:03, 60.71s/it] 69%|██████▉   | 9/13 [08:51<03:49, 57.40s/it] 77%|███████▋  | 10/13 [09:41<02:45, 55.14s/it] 85%|████████▍ | 11/13 [10:31<01:47, 53.55s/it] 92%|█████████▏| 12/13 [11:59<01:04, 64.00s/it]100%|██████████| 13/13 [12:48<00:00, 59.59s/it]100%|██████████| 13/13 [12:48<00:00, 59.15s/it]
+02/27 08:16:37 - OpenCompass - INFO - Start inferencing [7b_q_hf/lawbench2-3-5-prison_term_prediction_w_article-test]
+[2025-02-27 08:16:37,351] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [INFO] Starting build dataloader
+[2025-02-27 08:16:37,351] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [INFO] Starting inference process...
+  0%|          | 0/13 [00:00<?, ?it/s]  8%|▊         | 1/13 [00:53<10:46, 53.90s/it] 15%|█▌        | 2/13 [02:08<12:05, 65.96s/it] 23%|██▎       | 3/13 [03:22<11:36, 69.63s/it] 31%|███       | 4/13 [04:14<09:25, 62.85s/it] 38%|███▊      | 5/13 [05:35<09:15, 69.40s/it] 46%|████▌     | 6/13 [06:28<07:25, 63.69s/it] 54%|█████▍    | 7/13 [07:56<07:09, 71.62s/it] 62%|██████▏   | 8/13 [09:24<06:24, 76.81s/it] 69%|██████▉   | 9/13 [10:37<05:02, 75.55s/it] 77%|███████▋  | 10/13 [11:32<03:28, 69.48s/it] 85%|████████▍ | 11/13 [13:00<02:30, 75.13s/it] 92%|█████████▏| 12/13 [13:51<01:07, 67.71s/it]100%|██████████| 13/13 [14:41<00:00, 62.27s/it]100%|██████████| 13/13 [14:41<00:00, 67.80s/it]
+02/27 08:31:18 - OpenCompass - INFO - Start inferencing [7b_q_hf/lawbench2-3-6-case_analysis-test]
+[2025-02-27 08:31:18,719] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [INFO] Starting build dataloader
+[2025-02-27 08:31:18,719] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [INFO] Starting inference process...
+  0%|          | 0/13 [00:00<?, ?it/s]  8%|▊         | 1/13 [00:49<09:55, 49.61s/it] 15%|█▌        | 2/13 [01:38<09:04, 49.46s/it] 23%|██▎       | 3/13 [02:29<08:18, 49.85s/it] 31%|███       | 4/13 [03:18<07:27, 49.71s/it] 38%|███▊      | 5/13 [04:08<06:37, 49.72s/it] 46%|████▌     | 6/13 [04:57<05:47, 49.59s/it] 54%|█████▍    | 7/13 [05:47<04:56, 49.48s/it] 62%|██████▏   | 8/13 [06:37<04:08, 49.65s/it] 69%|██████▉   | 9/13 [07:27<03:18, 49.74s/it] 77%|███████▋  | 10/13 [08:16<02:28, 49.57s/it] 85%|████████▍ | 11/13 [09:05<01:39, 49.55s/it] 92%|█████████▏| 12/13 [09:55<00:49, 49.54s/it]100%|██████████| 13/13 [10:44<00:00, 49.43s/it]100%|██████████| 13/13 [10:44<00:00, 49.57s/it]
+02/27 08:42:03 - OpenCompass - INFO - Start inferencing [7b_q_hf/lawbench2-3-7-criminal_damages_calculation-test]
+[2025-02-27 08:42:03,199] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [INFO] Starting build dataloader
+[2025-02-27 08:42:03,199] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [INFO] Starting inference process...
+  0%|          | 0/13 [00:00<?, ?it/s]  8%|▊         | 1/13 [00:50<10:01, 50.09s/it] 15%|█▌        | 2/13 [01:40<09:14, 50.45s/it] 23%|██▎       | 3/13 [02:30<08:21, 50.12s/it] 31%|███       | 4/13 [03:21<07:34, 50.47s/it] 38%|███▊      | 5/13 [04:12<06:45, 50.66s/it] 46%|████▌     | 6/13 [05:02<05:52, 50.35s/it] 54%|█████▍    | 7/13 [05:52<05:02, 50.39s/it] 62%|██████▏   | 8/13 [06:44<04:13, 50.68s/it] 69%|██████▉   | 9/13 [07:35<03:24, 51.04s/it] 77%|███████▋  | 10/13 [08:26<02:33, 51.04s/it] 85%|████████▍ | 11/13 [09:17<01:41, 50.76s/it] 92%|█████████▏| 12/13 [10:06<00:50, 50.39s/it]100%|██████████| 13/13 [10:55<00:00, 50.06s/it]100%|██████████| 13/13 [10:55<00:00, 50.45s/it]
+02/27 08:52:59 - OpenCompass - INFO - Start inferencing [7b_q_hf/lawbench2-3-8-consultation-test]
+[2025-02-27 08:52:59,104] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [INFO] Starting build dataloader
+[2025-02-27 08:52:59,104] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [INFO] Starting inference process...
+  0%|          | 0/13 [00:00<?, ?it/s]  8%|▊         | 1/13 [00:48<09:46, 48.84s/it] 15%|█▌        | 2/13 [01:37<08:56, 48.76s/it] 23%|██▎       | 3/13 [02:26<08:06, 48.66s/it] 31%|███       | 4/13 [03:15<07:19, 48.79s/it] 38%|███▊      | 5/13 [04:03<06:29, 48.72s/it] 46%|████▌     | 6/13 [04:52<05:41, 48.76s/it] 54%|█████▍    | 7/13 [05:41<04:52, 48.78s/it] 62%|██████▏   | 8/13 [06:30<04:04, 48.84s/it] 69%|██████▉   | 9/13 [07:18<03:14, 48.66s/it] 77%|███████▋  | 10/13 [08:07<02:26, 48.71s/it] 85%|████████▍ | 11/13 [08:55<01:37, 48.68s/it] 92%|█████████▏| 12/13 [09:44<00:48, 48.69s/it]100%|██████████| 13/13 [10:34<00:00, 48.89s/it]100%|██████████| 13/13 [10:34<00:00, 48.77s/it]
+02/27 09:03:33 - OpenCompass - INFO - Partitioned into 20 tasks.
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 0.645 seconds.
+Prefix dict has been built successfully.
+02/27 09:03:35 - OpenCompass - INFO - Task [7b_q_hf/lawbench2-1-1-article_recitation-test]: {'score': 2.4413472202519646}
+02/27 09:03:35 - OpenCompass - INFO - Task [7b_q_hf/lawbench2-1-2-knowledge_question_answering-test]: {'score': 1.0, 'abstention_rate': 19.0}
+  0%|          | 0/200 [00:00<?, ?it/s] 64%|██████▍   | 128/200 [00:00<00:00, 775.51it/s]100%|██████████| 200/200 [00:00<00:00, 1210.17it/s]
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:33,  2.94it/s]  2%|▏         | 2/100 [00:02<02:21,  1.45s/it]  4%|▍         | 4/100 [00:02<00:56,  1.71it/s]  5%|▌         | 5/100 [00:03<00:49,  1.90it/s]  6%|▌         | 6/100 [00:13<05:22,  3.43s/it]  7%|▋         | 7/100 [00:13<03:58,  2.57s/it]  9%|▉         | 9/100 [00:13<02:07,  1.40s/it] 10%|█         | 10/100 [00:14<01:39,  1.10s/it] 12%|█▏        | 12/100 [00:14<01:02,  1.42it/s] 14%|█▍        | 14/100 [00:14<00:40,  2.14it/s] 16%|█▌        | 16/100 [00:15<00:43,  1.93it/s] 18%|█▊        | 18/100 [00:15<00:30,  2.71it/s] 19%|█▉        | 19/100 [00:15<00:26,  3.10it/s] 21%|██        | 21/100 [00:16<00:18,  4.33it/s] 23%|██▎       | 23/100 [00:17<00:28,  2.72it/s] 25%|██▌       | 25/100 [00:17<00:21,  3.51it/s] 28%|██▊       | 28/100 [00:17<00:13,  5.33it/s] 30%|███       | 30/100 [00:18<00:18,  3.86it/s] 31%|███       | 31/100 [00:18<00:18,  3.83it/s] 34%|███▍      | 34/100 [00:18<00:11,  5.90it/s] 36%|███▌      | 36/100 [00:19<00:16,  3.91it/s] 38%|███▊      | 38/100 [00:20<00:12,  5.07it/s] 40%|████      | 40/100 [00:21<00:19,  3.01it/s] 42%|████▏     | 42/100 [00:22<00:19,  2.98it/s] 43%|████▎     | 43/100 [00:22<00:24,  2.30it/s] 44%|████▍     | 44/100 [00:32<02:10,  2.34s/it] 45%|████▌     | 45/100 [00:33<01:43,  1.89s/it] 46%|████▌     | 46/100 [00:34<01:28,  1.64s/it] 49%|████▉     | 49/100 [00:34<00:42,  1.21it/s] 53%|█████▎    | 53/100 [00:34<00:20,  2.29it/s] 55%|█████▌    | 55/100 [00:34<00:15,  2.91it/s] 58%|█████▊    | 58/100 [00:34<00:10,  3.91it/s] 61%|██████    | 61/100 [00:34<00:07,  5.34it/s] 63%|██████▎   | 63/100 [00:35<00:06,  6.14it/s] 65%|██████▌   | 65/100 [00:36<00:10,  3.46it/s] 67%|██████▋   | 67/100 [00:37<00:12,  2.60it/s] 68%|██████▊   | 68/100 [00:38<00:13,  2.33it/s] 69%|██████▉   | 69/100 [00:48<01:08,  2.22s/it] 70%|███████   | 70/100 [00:49<00:59,  1.98s/it] 72%|███████▏  | 72/100 [00:49<00:35,  1.26s/it] 73%|███████▎  | 73/100 [00:49<00:28,  1.06s/it] 78%|███████▊  | 78/100 [00:50<00:09,  2.30it/s] 81%|████████  | 81/100 [01:00<00:27,  1.44s/it] 82%|████████▏ | 82/100 [01:00<00:22,  1.27s/it] 84%|████████▍ | 84/100 [01:02<00:19,  1.20s/it] 90%|█████████ | 90/100 [01:02<00:05,  1.80it/s] 92%|█████████▏| 92/100 [01:02<00:03,  2.20it/s] 94%|█████████▍| 94/100 [01:03<00:02,  2.60it/s] 96%|█████████▌| 96/100 [01:14<00:06,  1.65s/it] 99%|█████████▉| 99/100 [01:19<00:01,  1.70s/it]100%|██████████| 100/100 [01:19<00:00,  1.26it/s]
+  0%|          | 0/196 [00:00<?, ?it/s] 65%|██████▌   | 128/196 [00:00<00:00, 807.24it/s]100%|██████████| 196/196 [00:00<00:00, 1234.45it/s]
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:17,  5.60it/s]  2%|▏         | 2/100 [00:02<02:15,  1.38s/it]  4%|▍         | 4/100 [00:02<00:53,  1.79it/s]  5%|▌         | 5/100 [00:02<00:48,  1.97it/s]  7%|▋         | 7/100 [00:03<00:33,  2.76it/s]  9%|▉         | 9/100 [00:03<00:21,  4.19it/s] 10%|█         | 10/100 [00:03<00:24,  3.73it/s] 12%|█▏        | 12/100 [00:04<00:19,  4.52it/s] 14%|█▍        | 14/100 [00:04<00:14,  6.03it/s] 16%|█▌        | 16/100 [00:05<00:26,  3.15it/s] 18%|█▊        | 18/100 [00:05<00:19,  4.22it/s] 19%|█▉        | 19/100 [00:05<00:17,  4.61it/s] 21%|██        | 21/100 [00:05<00:12,  6.13it/s] 23%|██▎       | 23/100 [00:06<00:22,  3.39it/s] 25%|██▌       | 25/100 [00:07<00:17,  4.24it/s] 28%|██▊       | 28/100 [00:07<00:11,  6.28it/s] 30%|███       | 30/100 [00:08<00:18,  3.85it/s] 31%|███       | 31/100 [00:08<00:18,  3.81it/s] 34%|███▍      | 34/100 [00:08<00:11,  5.88it/s] 36%|███▌      | 36/100 [00:09<00:16,  3.90it/s] 38%|███▊      | 38/100 [00:09<00:12,  5.06it/s] 40%|████      | 40/100 [00:11<00:20,  3.00it/s] 42%|████▏     | 42/100 [00:11<00:18,  3.18it/s] 43%|████▎     | 43/100 [00:12<00:25,  2.25it/s] 46%|████▌     | 46/100 [00:13<00:20,  2.62it/s] 49%|████▉     | 49/100 [00:13<00:12,  3.98it/s] 53%|█████▎    | 53/100 [00:13<00:07,  6.25it/s] 55%|█████▌    | 55/100 [00:14<00:06,  7.06it/s] 58%|█████▊    | 58/100 [00:14<00:05,  7.87it/s] 61%|██████    | 61/100 [00:14<00:04,  9.69it/s] 63%|██████▎   | 63/100 [00:14<00:03, 10.06it/s] 65%|██████▌   | 65/100 [00:15<00:08,  4.22it/s] 67%|██████▋   | 67/100 [00:17<00:11,  2.92it/s] 68%|██████▊   | 68/100 [00:17<00:12,  2.54it/s] 70%|███████   | 70/100 [00:18<00:11,  2.52it/s] 72%|███████▏  | 72/100 [00:18<00:08,  3.42it/s] 73%|███████▎  | 73/100 [00:19<00:08,  3.32it/s] 78%|███████▊  | 78/100 [00:19<00:03,  7.00it/s] 84%|████████▍ | 84/100 [00:21<00:03,  4.04it/s] 90%|█████████ | 90/100 [00:21<00:01,  6.37it/s] 93%|█████████▎| 93/100 [00:21<00:01,  6.94it/s] 95%|█████████▌| 95/100 [00:22<00:00,  6.96it/s] 97%|█████████▋| 97/100 [00:23<00:00,  5.05it/s] 99%|█████████▉| 99/100 [00:28<00:00,  1.34it/s]100%|██████████| 100/100 [00:28<00:00,  1.50it/s]100%|██████████| 100/100 [00:28<00:00,  3.51it/s]
+  0%|          | 0/200 [00:00<?, ?it/s] 64%|██████▍   | 128/200 [00:00<00:00, 763.08it/s]100%|██████████| 200/200 [00:00<00:00, 1190.81it/s]
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:31,  3.10it/s]  2%|▏         | 2/100 [00:00<00:19,  4.95it/s]  5%|▌         | 5/100 [00:00<00:11,  7.95it/s]  6%|▌         | 6/100 [00:00<00:12,  7.49it/s]  7%|▋         | 7/100 [00:01<00:12,  7.70it/s]  9%|▉         | 9/100 [00:01<00:08, 10.38it/s] 11%|█         | 11/100 [00:01<00:09,  9.69it/s] 13%|█▎        | 13/100 [00:01<00:09,  9.22it/s] 16%|█▌        | 16/100 [00:01<00:07, 11.46it/s] 18%|█▊        | 18/100 [00:01<00:06, 12.82it/s] 21%|██        | 21/100 [00:02<00:05, 14.76it/s] 23%|██▎       | 23/100 [00:02<00:13,  5.61it/s] 28%|██▊       | 28/100 [00:03<00:07,  9.10it/s] 30%|███       | 30/100 [00:04<00:13,  5.37it/s] 32%|███▏      | 32/100 [00:04<00:12,  5.64it/s] 35%|███▌      | 35/100 [00:04<00:09,  7.09it/s] 37%|███▋      | 37/100 [00:04<00:08,  7.46it/s] 39%|███▉      | 39/100 [00:04<00:07,  8.67it/s] 41%|████      | 41/100 [00:05<00:06,  8.66it/s] 43%|████▎     | 43/100 [00:06<00:17,  3.34it/s] 46%|████▌     | 46/100 [00:07<00:15,  3.41it/s] 52%|█████▏    | 52/100 [00:07<00:07,  6.63it/s] 55%|█████▌    | 55/100 [00:07<00:05,  7.78it/s] 59%|█████▉    | 59/100 [00:07<00:03, 10.57it/s] 62%|██████▏   | 62/100 [00:08<00:03, 12.27it/s] 65%|██████▌   | 65/100 [00:08<00:02, 12.68it/s] 68%|██████▊   | 68/100 [00:09<00:05,  6.08it/s] 70%|███████   | 70/100 [00:09<00:04,  6.58it/s] 73%|███████▎  | 73/100 [00:09<00:03,  8.39it/s] 80%|████████  | 80/100 [00:09<00:01, 14.91it/s] 83%|████████▎ | 83/100 [00:10<00:01, 16.49it/s] 86%|████████▌ | 86/100 [00:11<00:01,  7.66it/s] 91%|█████████ | 91/100 [00:11<00:00, 10.77it/s] 94%|█████████▍| 94/100 [00:11<00:00, 10.41it/s] 96%|█████████▌| 96/100 [00:11<00:00,  8.50it/s] 99%|█████████▉| 99/100 [00:12<00:00, 10.45it/s]100%|██████████| 100/100 [00:12<00:00,  8.16it/s]
+  0%|          | 0/200 [00:00<?, ?it/s] 64%|██████▍   | 128/200 [00:00<00:00, 775.09it/s]100%|██████████| 200/200 [00:00<00:00, 1209.49it/s]
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:15,  6.22it/s]  2%|▏         | 2/100 [00:00<00:13,  7.36it/s]  5%|▌         | 5/100 [00:00<00:10,  9.30it/s]  6%|▌         | 6/100 [00:00<00:11,  8.33it/s]  7%|▋         | 7/100 [00:00<00:11,  8.34it/s]  9%|▉         | 9/100 [00:00<00:08, 10.81it/s] 11%|█         | 11/100 [00:01<00:11,  7.67it/s] 12%|█▏        | 12/100 [00:01<00:13,  6.69it/s] 16%|█▌        | 16/100 [00:01<00:07, 10.63it/s] 18%|█▊        | 18/100 [00:01<00:06, 12.00it/s] 21%|██        | 21/100 [00:02<00:05, 14.00it/s] 23%|██▎       | 23/100 [00:02<00:13,  5.52it/s] 28%|██▊       | 28/100 [00:03<00:08,  8.94it/s] 30%|███       | 30/100 [00:04<00:13,  5.33it/s] 32%|███▏      | 32/100 [00:04<00:12,  5.60it/s] 35%|███▌      | 35/100 [00:04<00:09,  7.03it/s] 37%|███▋      | 37/100 [00:04<00:08,  7.42it/s] 39%|███▉      | 39/100 [00:04<00:07,  8.57it/s] 41%|████      | 41/100 [00:05<00:06,  8.56it/s] 43%|████▎     | 43/100 [00:06<00:17,  3.32it/s] 46%|████▌     | 46/100 [00:07<00:16,  3.37it/s] 52%|█████▏    | 52/100 [00:07<00:07,  6.55it/s] 55%|█████▌    | 55/100 [00:07<00:05,  7.70it/s] 59%|█████▉    | 59/100 [00:08<00:03, 10.46it/s] 62%|██████▏   | 62/100 [00:08<00:03, 12.15it/s] 65%|██████▌   | 65/100 [00:08<00:02, 12.57it/s] 68%|██████▊   | 68/100 [00:09<00:05,  6.06it/s] 70%|███████   | 70/100 [00:09<00:04,  6.56it/s] 73%|███████▎  | 73/100 [00:09<00:03,  8.37it/s] 80%|████████  | 80/100 [00:10<00:01, 14.87it/s] 83%|████████▎ | 83/100 [00:10<00:01, 16.46it/s] 86%|████████▌ | 86/100 [00:11<00:01,  7.64it/s] 91%|█████████ | 91/100 [00:11<00:00, 10.77it/s] 94%|█████████▍| 94/100 [00:11<00:00, 12.06it/s] 97%|█████████▋| 97/100 [00:11<00:00,  9.93it/s] 99%|█████████▉| 99/100 [00:12<00:00,  9.52it/s]100%|██████████| 100/100 [00:12<00:00,  8.12it/s]
+02/27 09:05:57 - OpenCompass - INFO - Task [7b_q_hf/lawbench2-2-1-document_proofreading-test]: {'score': 1.0699999999999998}
+02/27 09:05:57 - OpenCompass - INFO - Task [7b_q_hf/lawbench2-2-2-dispute_focus_identification-test]: {'score': 1.0, 'abstention_rate': 79.0}
+02/27 09:05:57 - OpenCompass - INFO - Task [7b_q_hf/lawbench2-2-3-marital_disputes_identification-test]: {'score': 15.11566383990667, 'abstention_rate': 28.999999999999996}
+02/27 09:05:57 - OpenCompass - INFO - Task [7b_q_hf/lawbench2-2-4-issue_topic_identification-test]: {'score': 5.0, 'abstention_rate': 80.0}
+02/27 09:05:58 - OpenCompass - INFO - Task [7b_q_hf/lawbench2-2-5-reading_comprehension-test]: {'score': 4.06467254235971}
+02/27 09:05:58 - OpenCompass - INFO - Task [7b_q_hf/lawbench2-2-6-named_entity_recognition-test]: {'score': 35.372595342297416, 'anstention_rate': 12.0}
+02/27 09:06:00 - OpenCompass - INFO - Task [7b_q_hf/lawbench2-2-7-opinion_summarization-test]: {'score': 17.83471118262042}
+02/27 09:06:00 - OpenCompass - INFO - Task [7b_q_hf/lawbench2-2-8-argument_mining-test]: {'score': 0.0, 'abstention_rate': 28.999999999999996}
+02/27 09:06:00 - OpenCompass - INFO - Task [7b_q_hf/lawbench2-2-9-event_detection-test]: {'score': 11.508752117447758, 'abstention_rate': 37.0}
+02/27 09:06:00 - OpenCompass - INFO - Task [7b_q_hf/lawbench2-2-10-trigger_word_extraction-test]: {'score': 0.37627974535772707}
+/root/miniconda3/envs/opencompass/lib/python3.10/site-packages/cn2an/transform.py:103: UserWarning: 不符合格式的数据：三十四十
+  warn(str(e))
+/root/miniconda3/envs/opencompass/lib/python3.10/site-packages/cn2an/transform.py:103: UserWarning: 不符合格式的数据：万
+  warn(str(e))
+02/27 09:06:00 - OpenCompass - INFO - Task [7b_q_hf/lawbench2-3-1-fact_based_article_prediction-test]: {'score': 0.6666666666666666, 'abstention_rate': 27.0}
+02/27 09:06:02 - OpenCompass - INFO - Task [7b_q_hf/lawbench2-3-2-scene_based_article_prediction-test]: {'score': 5.878620325023757}
+02/27 09:06:02 - OpenCompass - INFO - Task [7b_q_hf/lawbench2-3-3-charge_prediction-test]: {'score': 5.233333333333333, 'abstention_rate': 52.0}
+/root/miniconda3/envs/opencompass/lib/python3.10/site-packages/cn2an/transform.py:103: UserWarning: 不符合格式的数据：千
+  warn(str(e))
+02/27 09:06:02 - OpenCompass - INFO - Task [7b_q_hf/lawbench2-3-4-prison_term_prediction_wo_article-test]: {'score': 44.326526738993074, 'abstention_rate': 42.0}
+02/27 09:06:02 - OpenCompass - INFO - Task [7b_q_hf/lawbench2-3-5-prison_term_prediction_w_article-test]: {'score': 41.171796728147584, 'abstention_rate': 44.0}
+02/27 09:06:03 - OpenCompass - INFO - Task [7b_q_hf/lawbench2-3-6-case_analysis-test]: {'score': 0.0, 'abstention_rate': 21.0}
+02/27 09:06:03 - OpenCompass - INFO - Task [7b_q_hf/lawbench2-3-7-criminal_damages_calculation-test]: {'score': 24.0, 'abstention_rate': 10.0}
+02/27 09:06:09 - OpenCompass - INFO - Task [7b_q_hf/lawbench2-3-8-consultation-test]: {'score': 7.233358868332979}
+dataset                                               version    metric           mode      7b_q_hf
+----------------------------------------------------  ---------  ---------------  ------  ---------
+lawbench2-1-1-article_recitation-test                 056a7f     score            gen          2.44
+lawbench2-1-2-knowledge_question_answering-test       056a7f     score            gen          1.00
+lawbench2-1-2-knowledge_question_answering-test       056a7f     abstention_rate  gen         19.00
+lawbench2-2-1-document_proofreading-test              056a7f     score            gen          1.07
+lawbench2-2-2-dispute_focus_identification-test       056a7f     score            gen          1.00
+lawbench2-2-2-dispute_focus_identification-test       056a7f     abstention_rate  gen         79.00
+lawbench2-2-3-marital_disputes_identification-test    056a7f     score            gen         15.12
+lawbench2-2-3-marital_disputes_identification-test    056a7f     abstention_rate  gen         29.00
+lawbench2-2-4-issue_topic_identification-test         056a7f     score            gen          5.00
+lawbench2-2-4-issue_topic_identification-test         056a7f     abstention_rate  gen         80.00
+lawbench2-2-5-reading_comprehension-test              056a7f     score            gen          4.06
+lawbench2-2-6-named_entity_recognition-test           056a7f     score            gen         35.37
+lawbench2-2-6-named_entity_recognition-test           056a7f     anstention_rate  gen         12.00
+lawbench2-2-7-opinion_summarization-test              056a7f     score            gen         17.83
+lawbench2-2-8-argument_mining-test                    056a7f     score            gen          0.00
+lawbench2-2-8-argument_mining-test                    056a7f     abstention_rate  gen         29.00
+lawbench2-2-9-event_detection-test                    056a7f     score            gen         11.51
+lawbench2-2-9-event_detection-test                    056a7f     abstention_rate  gen         37.00
+lawbench2-2-10-trigger_word_extraction-test           056a7f     score            gen          0.38
+lawbench2-3-1-fact_based_article_prediction-test      056a7f     score            gen          0.67
+lawbench2-3-1-fact_based_article_prediction-test      056a7f     abstention_rate  gen         27.00
+lawbench2-3-2-scene_based_article_prediction-test     056a7f     score            gen          5.88
+lawbench2-3-3-charge_prediction-test                  056a7f     score            gen          5.23
+lawbench2-3-3-charge_prediction-test                  056a7f     abstention_rate  gen         52.00
+lawbench2-3-4-prison_term_prediction_wo_article-test  056a7f     score            gen         44.33
+lawbench2-3-4-prison_term_prediction_wo_article-test  056a7f     abstention_rate  gen         42.00
+lawbench2-3-5-prison_term_prediction_w_article-test   056a7f     score            gen         41.17
+lawbench2-3-5-prison_term_prediction_w_article-test   056a7f     abstention_rate  gen         44.00
+lawbench2-3-6-case_analysis-test                      056a7f     score            gen          0.00
+lawbench2-3-6-case_analysis-test                      056a7f     abstention_rate  gen         21.00
+lawbench2-3-7-criminal_damages_calculation-test       056a7f     score            gen         24.00
+lawbench2-3-7-criminal_damages_calculation-test       056a7f     abstention_rate  gen         10.00
+lawbench2-3-8-consultation-test                       056a7f     score            gen          7.23
+02/27 09:06:09 - OpenCompass - INFO - write summary to /root/autodl-tmp/opencompass/opencompass/outputs/default/20250227_051715/summary/summary_20250227_051715.txt
+02/27 09:06:09 - OpenCompass - INFO - write csv to /root/autodl-tmp/opencompass/opencompass/outputs/default/20250227_051715/summary/summary_20250227_051715.csv
+
+
+The markdown format results is as below:
+
+| dataset | version | metric | mode | 7b_q_hf |
+|----- | ----- | ----- | ----- | -----|
+| lawbench2-1-1-article_recitation-test | 056a7f | score | gen | 2.44 |
+| lawbench2-1-2-knowledge_question_answering-test | 056a7f | score | gen | 1.00 |
+| lawbench2-1-2-knowledge_question_answering-test | 056a7f | abstention_rate | gen | 19.00 |
+| lawbench2-2-1-document_proofreading-test | 056a7f | score | gen | 1.07 |
+| lawbench2-2-2-dispute_focus_identification-test | 056a7f | score | gen | 1.00 |
+| lawbench2-2-2-dispute_focus_identification-test | 056a7f | abstention_rate | gen | 79.00 |
+| lawbench2-2-3-marital_disputes_identification-test | 056a7f | score | gen | 15.12 |
+| lawbench2-2-3-marital_disputes_identification-test | 056a7f | abstention_rate | gen | 29.00 |
+| lawbench2-2-4-issue_topic_identification-test | 056a7f | score | gen | 5.00 |
+| lawbench2-2-4-issue_topic_identification-test | 056a7f | abstention_rate | gen | 80.00 |
+| lawbench2-2-5-reading_comprehension-test | 056a7f | score | gen | 4.06 |
+| lawbench2-2-6-named_entity_recognition-test | 056a7f | score | gen | 35.37 |
+| lawbench2-2-6-named_entity_recognition-test | 056a7f | anstention_rate | gen | 12.00 |
+| lawbench2-2-7-opinion_summarization-test | 056a7f | score | gen | 17.83 |
+| lawbench2-2-8-argument_mining-test | 056a7f | score | gen | 0.00 |
+| lawbench2-2-8-argument_mining-test | 056a7f | abstention_rate | gen | 29.00 |
+| lawbench2-2-9-event_detection-test | 056a7f | score | gen | 11.51 |
+| lawbench2-2-9-event_detection-test | 056a7f | abstention_rate | gen | 37.00 |
+| lawbench2-2-10-trigger_word_extraction-test | 056a7f | score | gen | 0.38 |
+| lawbench2-3-1-fact_based_article_prediction-test | 056a7f | score | gen | 0.67 |
+| lawbench2-3-1-fact_based_article_prediction-test | 056a7f | abstention_rate | gen | 27.00 |
+| lawbench2-3-2-scene_based_article_prediction-test | 056a7f | score | gen | 5.88 |
+| lawbench2-3-3-charge_prediction-test | 056a7f | score | gen | 5.23 |
+| lawbench2-3-3-charge_prediction-test | 056a7f | abstention_rate | gen | 52.00 |
+| lawbench2-3-4-prison_term_prediction_wo_article-test | 056a7f | score | gen | 44.33 |
+| lawbench2-3-4-prison_term_prediction_wo_article-test | 056a7f | abstention_rate | gen | 42.00 |
+| lawbench2-3-5-prison_term_prediction_w_article-test | 056a7f | score | gen | 41.17 |
+| lawbench2-3-5-prison_term_prediction_w_article-test | 056a7f | abstention_rate | gen | 44.00 |
+| lawbench2-3-6-case_analysis-test | 056a7f | score | gen | 0.00 |
+| lawbench2-3-6-case_analysis-test | 056a7f | abstention_rate | gen | 21.00 |
+| lawbench2-3-7-criminal_damages_calculation-test | 056a7f | score | gen | 24.00 |
+| lawbench2-3-7-criminal_damages_calculation-test | 056a7f | abstention_rate | gen | 10.00 |
+| lawbench2-3-8-consultation-test | 056a7f | score | gen | 7.23 |
+
+02/27 09:06:09 - OpenCompass - INFO - write markdown summary to /root/autodl-tmp/opencompass/opencompass/outputs/default/20250227_051715/summary/summary_20250227_051715.md
+Benchmark finished.
+GPU monitoring data saved to /root/autodl-tmp/gpu_load/20250227051710_gpu_usage.csv
+Task finished at: Thu Feb 27 09:06:10 CST 2025
+Shutting down system now...
+Stopped GPU monitoring process (PID: 10438)

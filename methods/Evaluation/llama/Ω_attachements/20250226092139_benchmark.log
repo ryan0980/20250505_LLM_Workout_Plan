@@ -1,0 +1,138 @@
+====================
+任务开始时间：Wed Feb 26 09:21:39 CST 2025
+日志文件：/root/autodl-tmp/gpu_load/20250226092139_benchmark.log
+GPU监控数据文件：/root/autodl-tmp/gpu_load/20250226092139_gpu_usage.csv
+当前所有 GPU 信息：
+GPU 0: NVIDIA GeForce RTX 4090 (UUID: GPU-c46868e5-abc1-554b-fc44-f06b04c8f52e)
+GPU 1: NVIDIA GeForce RTX 4090 (UUID: GPU-c71d5e5f-4ab5-35a3-fc92-c6b539c22b7e)
+--------------------
+可用 GPU 数量：2
+====================
+Starting GPU monitoring, output file: /root/autodl-tmp/gpu_load/20250226092139_gpu_usage.csv
+Starting benchmark...
+02/26 09:21:46 - OpenCompass - WARNING - Found ambiguous patterns, using the first matched config.
++----------------------+-----------------------------------------------------------------------------------------------+
+| Ambiguous patterns   | Matched files                                                                                 |
+|----------------------+-----------------------------------------------------------------------------------------------|
+| lawbench3            | configs/datasets/lawbench/lawbench3.py                                                        |
+|                      | /root/autodl-tmp/opencompass/opencompass/opencompass/configs/./datasets/lawbench/lawbench3.py |
++----------------------+-----------------------------------------------------------------------------------------------+
+02/26 09:21:46 - OpenCompass - INFO - Loading lawbench3: configs/datasets/lawbench/lawbench3.py
+02/26 09:21:46 - OpenCompass - WARNING - Found ambiguous patterns, using the first matched config.
++----------------------+---------------------------------------------------------------------------------------+
+| Ambiguous patterns   | Matched files                                                                         |
+|----------------------+---------------------------------------------------------------------------------------|
+| example              | configs/summarizers/example.py                                                        |
+|                      | /root/autodl-tmp/opencompass/opencompass/opencompass/configs/./summarizers/example.py |
++----------------------+---------------------------------------------------------------------------------------+
+02/26 09:21:46 - OpenCompass - INFO - Loading example: configs/summarizers/example.py
+02/26 09:21:46 - OpenCompass - INFO - Current exp folder: outputs/default/20250226_092146
+02/26 09:21:46 - OpenCompass - WARNING - SlurmRunner is not used, so the partition argument is ignored.
+02/26 09:21:46 - OpenCompass - INFO - Partitioned into 1 tasks.
+  0%|                                                                         | 0/1 [00:00<?, ?it/s]                                                                                                      0%|                                                                         | 0/1 [00:00<?, ?it/s]100%|████████████████████████████████████████████████████████████████| 1/1 [09:00<00:00, 540.99s/it]100%|████████████████████████████████████████████████████████████████| 1/1 [09:00<00:00, 540.99s/it]
+launch OpenICLInfer[7b_p_hf/lawbench3-1-1-article_recitation-test,7b_p_hf/lawbench3-1-2-knowledge_question_answering-test,7b_p_hf/lawbench3-2-1-document_proofreading-test,7b_p_hf/lawbench3-2-2-dispute_focus_identification-test,7b_p_hf/lawbench3-2-3-marital_disputes_identification-test,7b_p_hf/lawbench3-2-4-issue_topic_identification-test,7b_p_hf/lawbench3-2-5-reading_comprehension-test,7b_p_hf/lawbench3-2-6-named_entity_recognition-test,7b_p_hf/lawbench3-2-7-opinion_summarization-test,7b_p_hf/lawbench3-2-8-argument_mining-test,7b_p_hf/lawbench3-2-9-event_detection-test,7b_p_hf/lawbench3-2-10-trigger_word_extraction-test,7b_p_hf/lawbench3-3-1-fact_based_article_prediction-test,7b_p_hf/lawbench3-3-2-scene_based_article_prediction-test,7b_p_hf/lawbench3-3-3-charge_prediction-test,7b_p_hf/lawbench3-3-4-prison_term_prediction_wo_article-test,7b_p_hf/lawbench3-3-5-prison_term_prediction_w_article-test,7b_p_hf/lawbench3-3-6-case_analysis-test,7b_p_hf/lawbench3-3-7-criminal_damages_calculation-test,7b_p_hf/lawbench3-3-8-consultation-test] on GPU 0
+02/26 09:30:47 - OpenCompass - INFO - Partitioned into 20 tasks.
+  0%|                                                                        | 0/20 [00:00<?, ?it/s]                                                                                                      0%|                                                                        | 0/20 [00:00<?, ?it/s]  5%|███▏                                                            | 1/20 [00:06<02:11,  6.92s/it]                                                                                                      5%|███▏                                                            | 1/20 [00:06<02:11,  6.92s/it] 10%|██████▍                                                         | 2/20 [00:13<02:03,  6.84s/it]                                                                                                     10%|██████▍                                                         | 2/20 [00:13<02:03,  6.84s/it] 15%|█████████▌                                                      | 3/20 [00:33<03:39, 12.89s/it]                                                                                                     15%|█████████▌                                                      | 3/20 [00:33<03:39, 12.89s/it] 20%|████████████▊                                                   | 4/20 [00:39<02:43, 10.21s/it]                                                                                                     20%|████████████▊                                                   | 4/20 [00:39<02:43, 10.21s/it] 25%|████████████████                                                | 5/20 [00:46<02:15,  9.01s/it]                                                                                                     25%|████████████████                                                | 5/20 [00:46<02:15,  9.01s/it] 30%|███████████████████▏                                            | 6/20 [00:53<01:53,  8.11s/it]                                                                                                     30%|███████████████████▏                                            | 6/20 [00:53<01:53,  8.11s/it] 35%|██████████████████████▍                                         | 7/20 [00:59<01:37,  7.54s/it]                                                                                                     35%|██████████████████████▍                                         | 7/20 [00:59<01:37,  7.54s/it] 40%|█████████████████████████▌                                      | 8/20 [01:06<01:26,  7.22s/it]                                                                                                     40%|█████████████████████████▌                                      | 8/20 [01:06<01:26,  7.22s/it] 45%|████████████████████████████▊                                   | 9/20 [01:13<01:20,  7.34s/it]                                                                                                     45%|████████████████████████████▊                                   | 9/20 [01:13<01:20,  7.34s/it] 50%|███████████████████████████████▌                               | 10/20 [01:19<01:10,  7.01s/it]                                                                                                     50%|███████████████████████████████▌                               | 10/20 [01:19<01:10,  7.01s/it] 55%|██████████████████████████████████▋                            | 11/20 [01:26<01:01,  6.81s/it]                                                                                                     55%|██████████████████████████████████▋                            | 11/20 [01:26<01:01,  6.81s/it] 60%|█████████████████████████████████████▊                         | 12/20 [01:32<00:53,  6.73s/it]                                                                                                     60%|█████████████████████████████████████▊                         | 12/20 [01:32<00:53,  6.73s/it] 65%|████████████████████████████████████████▉                      | 13/20 [01:39<00:46,  6.66s/it]                                                                                                     65%|████████████████████████████████████████▉                      | 13/20 [01:39<00:46,  6.66s/it] 70%|████████████████████████████████████████████                   | 14/20 [01:46<00:41,  6.84s/it]                                                                                                     70%|████████████████████████████████████████████                   | 14/20 [01:46<00:41,  6.84s/it] 75%|███████████████████████████████████████████████▎               | 15/20 [01:52<00:32,  6.60s/it]                                                                                                     75%|███████████████████████████████████████████████▎               | 15/20 [01:52<00:32,  6.60s/it] 80%|██████████████████████████████████████████████████▍            | 16/20 [01:59<00:26,  6.54s/it]                                                                                                     80%|██████████████████████████████████████████████████▍            | 16/20 [01:59<00:26,  6.54s/it] 85%|█████████████████████████████████████████████████████▌         | 17/20 [02:05<00:19,  6.50s/it]                                                                                                     85%|█████████████████████████████████████████████████████▌         | 17/20 [02:05<00:19,  6.50s/it] 90%|████████████████████████████████████████████████████████▋      | 18/20 [02:11<00:12,  6.46s/it]                                                                                                     90%|████████████████████████████████████████████████████████▋      | 18/20 [02:11<00:12,  6.46s/it] 95%|███████████████████████████████████████████████████████████▊   | 19/20 [02:18<00:06,  6.52s/it]                                                                                                     95%|███████████████████████████████████████████████████████████▊   | 19/20 [02:18<00:06,  6.52s/it]100%|███████████████████████████████████████████████████████████████| 20/20 [02:25<00:00,  6.69s/it]100%|███████████████████████████████████████████████████████████████| 20/20 [02:25<00:00,  7.28s/it]
+launch OpenICLEval[7b_p_hf/lawbench3-1-1-article_recitation-test] on CPU 
+launch OpenICLEval[7b_p_hf/lawbench3-1-2-knowledge_question_answering-test] on CPU 
+launch OpenICLEval[7b_p_hf/lawbench3-2-1-document_proofreading-test] on CPU 
+launch OpenICLEval[7b_p_hf/lawbench3-2-2-dispute_focus_identification-test] on CPU 
+launch OpenICLEval[7b_p_hf/lawbench3-2-3-marital_disputes_identification-test] on CPU 
+launch OpenICLEval[7b_p_hf/lawbench3-2-4-issue_topic_identification-test] on CPU 
+launch OpenICLEval[7b_p_hf/lawbench3-2-5-reading_comprehension-test] on CPU 
+launch OpenICLEval[7b_p_hf/lawbench3-2-6-named_entity_recognition-test] on CPU 
+launch OpenICLEval[7b_p_hf/lawbench3-2-7-opinion_summarization-test] on CPU 
+launch OpenICLEval[7b_p_hf/lawbench3-2-8-argument_mining-test] on CPU 
+launch OpenICLEval[7b_p_hf/lawbench3-2-9-event_detection-test] on CPU 
+launch OpenICLEval[7b_p_hf/lawbench3-2-10-trigger_word_extraction-test] on CPU 
+launch OpenICLEval[7b_p_hf/lawbench3-3-1-fact_based_article_prediction-test] on CPU 
+launch OpenICLEval[7b_p_hf/lawbench3-3-2-scene_based_article_prediction-test] on CPU 
+launch OpenICLEval[7b_p_hf/lawbench3-3-3-charge_prediction-test] on CPU 
+launch OpenICLEval[7b_p_hf/lawbench3-3-4-prison_term_prediction_wo_article-test] on CPU 
+launch OpenICLEval[7b_p_hf/lawbench3-3-5-prison_term_prediction_w_article-test] on CPU 
+launch OpenICLEval[7b_p_hf/lawbench3-3-6-case_analysis-test] on CPU 
+launch OpenICLEval[7b_p_hf/lawbench3-3-7-criminal_damages_calculation-test] on CPU 
+launch OpenICLEval[7b_p_hf/lawbench3-3-8-consultation-test] on CPU 
+dataset                                               version    metric           mode      7b_p_hf
+----------------------------------------------------  ---------  ---------------  ------  ---------
+lawbench3-1-1-article_recitation-test                 056a7f     score            gen          2.58
+lawbench3-1-2-knowledge_question_answering-test       056a7f     score            gen          0.00
+lawbench3-1-2-knowledge_question_answering-test       056a7f     abstention_rate  gen          0.00
+lawbench3-2-1-document_proofreading-test              056a7f     score            gen          0.00
+lawbench3-2-2-dispute_focus_identification-test       056a7f     score            gen          0.00
+lawbench3-2-2-dispute_focus_identification-test       056a7f     abstention_rate  gen         50.00
+lawbench3-2-3-marital_disputes_identification-test    056a7f     score            gen          0.00
+lawbench3-2-3-marital_disputes_identification-test    056a7f     abstention_rate  gen        100.00
+lawbench3-2-4-issue_topic_identification-test         056a7f     score            gen          0.00
+lawbench3-2-4-issue_topic_identification-test         056a7f     abstention_rate  gen        100.00
+lawbench3-2-5-reading_comprehension-test              056a7f     score            gen          6.39
+lawbench3-2-6-named_entity_recognition-test           056a7f     score            gen          0.00
+lawbench3-2-6-named_entity_recognition-test           056a7f     anstention_rate  gen        100.00
+lawbench3-2-7-opinion_summarization-test              056a7f     score            gen         17.90
+lawbench3-2-8-argument_mining-test                    056a7f     score            gen          0.00
+lawbench3-2-8-argument_mining-test                    056a7f     abstention_rate  gen          0.00
+lawbench3-2-9-event_detection-test                    056a7f     score            gen          0.00
+lawbench3-2-9-event_detection-test                    056a7f     abstention_rate  gen        100.00
+lawbench3-2-10-trigger_word_extraction-test           056a7f     score            gen          0.41
+lawbench3-3-1-fact_based_article_prediction-test      056a7f     score            gen          0.00
+lawbench3-3-1-fact_based_article_prediction-test      056a7f     abstention_rate  gen         50.00
+lawbench3-3-2-scene_based_article_prediction-test     056a7f     score            gen          9.76
+lawbench3-3-3-charge_prediction-test                  056a7f     score            gen          0.00
+lawbench3-3-3-charge_prediction-test                  056a7f     abstention_rate  gen          0.00
+lawbench3-3-4-prison_term_prediction_wo_article-test  056a7f     score            gen          0.00
+lawbench3-3-4-prison_term_prediction_wo_article-test  056a7f     abstention_rate  gen        100.00
+lawbench3-3-5-prison_term_prediction_w_article-test   056a7f     score            gen         92.71
+lawbench3-3-5-prison_term_prediction_w_article-test   056a7f     abstention_rate  gen          0.00
+lawbench3-3-6-case_analysis-test                      056a7f     score            gen          0.00
+lawbench3-3-6-case_analysis-test                      056a7f     abstention_rate  gen         50.00
+lawbench3-3-7-criminal_damages_calculation-test       056a7f     score            gen          0.00
+lawbench3-3-7-criminal_damages_calculation-test       056a7f     abstention_rate  gen         50.00
+lawbench3-3-8-consultation-test                       056a7f     score            gen         11.94
+02/26 09:33:12 - OpenCompass - INFO - write summary to /root/autodl-tmp/opencompass/opencompass/outputs/default/20250226_092146/summary/summary_20250226_092146.txt
+02/26 09:33:12 - OpenCompass - INFO - write csv to /root/autodl-tmp/opencompass/opencompass/outputs/default/20250226_092146/summary/summary_20250226_092146.csv
+
+
+The markdown format results is as below:
+
+| dataset | version | metric | mode | 7b_p_hf |
+|----- | ----- | ----- | ----- | -----|
+| lawbench3-1-1-article_recitation-test | 056a7f | score | gen | 2.58 |
+| lawbench3-1-2-knowledge_question_answering-test | 056a7f | score | gen | 0.00 |
+| lawbench3-1-2-knowledge_question_answering-test | 056a7f | abstention_rate | gen | 0.00 |
+| lawbench3-2-1-document_proofreading-test | 056a7f | score | gen | 0.00 |
+| lawbench3-2-2-dispute_focus_identification-test | 056a7f | score | gen | 0.00 |
+| lawbench3-2-2-dispute_focus_identification-test | 056a7f | abstention_rate | gen | 50.00 |
+| lawbench3-2-3-marital_disputes_identification-test | 056a7f | score | gen | 0.00 |
+| lawbench3-2-3-marital_disputes_identification-test | 056a7f | abstention_rate | gen | 100.00 |
+| lawbench3-2-4-issue_topic_identification-test | 056a7f | score | gen | 0.00 |
+| lawbench3-2-4-issue_topic_identification-test | 056a7f | abstention_rate | gen | 100.00 |
+| lawbench3-2-5-reading_comprehension-test | 056a7f | score | gen | 6.39 |
+| lawbench3-2-6-named_entity_recognition-test | 056a7f | score | gen | 0.00 |
+| lawbench3-2-6-named_entity_recognition-test | 056a7f | anstention_rate | gen | 100.00 |
+| lawbench3-2-7-opinion_summarization-test | 056a7f | score | gen | 17.90 |
+| lawbench3-2-8-argument_mining-test | 056a7f | score | gen | 0.00 |
+| lawbench3-2-8-argument_mining-test | 056a7f | abstention_rate | gen | 0.00 |
+| lawbench3-2-9-event_detection-test | 056a7f | score | gen | 0.00 |
+| lawbench3-2-9-event_detection-test | 056a7f | abstention_rate | gen | 100.00 |
+| lawbench3-2-10-trigger_word_extraction-test | 056a7f | score | gen | 0.41 |
+| lawbench3-3-1-fact_based_article_prediction-test | 056a7f | score | gen | 0.00 |
+| lawbench3-3-1-fact_based_article_prediction-test | 056a7f | abstention_rate | gen | 50.00 |
+| lawbench3-3-2-scene_based_article_prediction-test | 056a7f | score | gen | 9.76 |
+| lawbench3-3-3-charge_prediction-test | 056a7f | score | gen | 0.00 |
+| lawbench3-3-3-charge_prediction-test | 056a7f | abstention_rate | gen | 0.00 |
+| lawbench3-3-4-prison_term_prediction_wo_article-test | 056a7f | score | gen | 0.00 |
+| lawbench3-3-4-prison_term_prediction_wo_article-test | 056a7f | abstention_rate | gen | 100.00 |
+| lawbench3-3-5-prison_term_prediction_w_article-test | 056a7f | score | gen | 92.71 |
+| lawbench3-3-5-prison_term_prediction_w_article-test | 056a7f | abstention_rate | gen | 0.00 |
+| lawbench3-3-6-case_analysis-test | 056a7f | score | gen | 0.00 |
+| lawbench3-3-6-case_analysis-test | 056a7f | abstention_rate | gen | 50.00 |
+| lawbench3-3-7-criminal_damages_calculation-test | 056a7f | score | gen | 0.00 |
+| lawbench3-3-7-criminal_damages_calculation-test | 056a7f | abstention_rate | gen | 50.00 |
+| lawbench3-3-8-consultation-test | 056a7f | score | gen | 11.94 |
+
+02/26 09:33:12 - OpenCompass - INFO - write markdown summary to /root/autodl-tmp/opencompass/opencompass/outputs/default/20250226_092146/summary/summary_20250226_092146.md
+Benchmark finished.
+GPU monitoring data saved to /root/autodl-tmp/gpu_load/20250226092139_gpu_usage.csv
+Task finished at: Wed Feb 26 09:33:14 CST 2025
+Shutting down system now...
+Stopped GPU monitoring process (PID: 9876)
