@@ -100,14 +100,4 @@ The study evaluates 16 different compression pipelines on:
 
 Detailed results and analysis can be found in the paper.
 
-## Citation
 
-If you use this code in your research, please cite our paper:
-
-```
-[Citation information to be added]
-```
-
-## License
-
-[License information to be added]
