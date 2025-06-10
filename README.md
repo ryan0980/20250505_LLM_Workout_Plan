@@ -49,46 +49,7 @@ The compressed models are available on Hugging Face Hub under the [tusrau](https
 - `tusrau/q3b_p_ft`: Pruned and fine-tuned model
 - `tusrau/q3bp`: Pruned model
 
-## Usage
 
-### Loading Models
-
-```python
-from transformers import AutoModelForCausalLM, AutoTokenizer
-
-# Load model and tokenizer
-model_name = "tusrau/q3bft_q_p"  # or any other model from the list above
-model = AutoModelForCausalLM.from_pretrained(model_name)
-tokenizer = AutoTokenizer.from_pretrained(model_name)
-```
-
-### Quantization
-
-```bash
-cd awq
-python quantize.py --model_path [path_to_model] --output_dir [output_path]
-```
-
-### Pruning
-
-```bash
-cd prune_short_Gpt
-python prune.py --model_path [path_to_model] --sparsity [sparsity_ratio]
-```
-
-### Fine-tuning with LoRA
-
-```bash
-cd llamafactory
-python train.py --model_path [path_to_model] --dataset [dataset_path]
-```
-
-### Evaluation
-
-```bash
-cd opencompass
-python run_eval.py --model_path [path_to_model] --benchmark [benchmark_name]
-```
 
 ## Results
 
