@@ -59,6 +59,6 @@ The study evaluates 16 different compression pipelines on:
 - MMLU-STEM
 - MMLU-Law
 
-Detailed results and analysis can be found in the paper.
+Detailed results and analysis can be found in the paper (not yet published) or in the results folder.
 
 
