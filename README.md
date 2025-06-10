@@ -38,8 +38,8 @@ pip install -r requirements.txt
 
 The compressed models are available on Hugging Face Hub under the [tusrau](https://huggingface.co/tusrau) organization. The following models are available:
 
-- `tusrau/q3bft_q_p`: Quantized, fine-tuned, and pruned model
-- `tusrau/q3b_q_ft_p`: Quantized, fine-tuned, and pruned model (different order)
+- `tusrau/q3bft_q_p`: fine-tuned, Quantized, and pruned model
+- `tusrau/q3b_q_ft_p`: Quantized, fine-tuned, and pruned model
 - `tusrau/q3b_p_ft_q`: Pruned, fine-tuned, and quantized model
 - `tusrau/q3b_ft_p_q`: Fine-tuned, pruned, and quantized model
 - `tusrau/q3bp_q`: Pruned and quantized model
