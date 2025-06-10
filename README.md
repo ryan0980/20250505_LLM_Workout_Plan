@@ -1,6 +1,6 @@
 # Qwen2.5-3B Model Compression Study
 
-This repository contains the implementation and evaluation of various compression techniques for the Qwen2.5-3B language model. The study explores different combinations of quantization, pruning, and fine-tuning methods to achieve efficient model deployment while maintaining performance.
+This repository contains the implementation and evaluation of various compression techniques for the Qwen2.5-3B and llama language model. The study explores different combinations of quantization, pruning, and fine-tuning methods to achieve efficient model deployment while maintaining performance.
 
 ## Abstract
 
